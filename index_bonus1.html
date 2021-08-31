@@ -19,6 +19,12 @@
         <div class="containerBigger">
             <header>
                 <img src="./img/spotify-logo.png" alt="">
+                <select v-model="selectedGenre" v-on:change="filter" name="genre" id="genre">
+                    <option value="All">All</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Pop">Pop</option>
+                </select>
             </header>
             
             <div class="containerBig">
